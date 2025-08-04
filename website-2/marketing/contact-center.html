@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soluciones de Contact Center - Sempitecno</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { background-color: #f7fafc; }
+        .bg-custom-orange { background-color: #fffaf0; }
+        .text-custom-orange { color: #dd6b20; }
+        .dropdown:hover .dropdown-menu { display: block; }
+        .dropdown-menu { display: none; position: absolute; z-index: 10; }
+    </style>
+</head>
+<body class="font-sans">
+
+    <!-- Header -->
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div>
+                    <a href="../index.html" class="text-2xl font-bold text-gray-800">Sempitecno</a>
+                </div>
+                <nav class="hidden md:flex space-x-6">
+                    <!-- IT Department -->
+                    <div class="relative dropdown">
+                        <button class="text-gray-600 hover:text-custom-orange">Para TI</button>
+                        <div class="dropdown-menu bg-white rounded-md shadow-lg mt-2 py-2 w-48">
+                            <a href="../it/zabbix.html" class="block px-4 py-2 text-gray-800 hover:bg-custom-orange">Monitoreo (Zabbix)</a>
+                            <a href="../it/otobo.html" class="block px-4 py-2 text-gray-800 hover:bg-custom-orange">Mesa de Ayuda (Otobo)</a>
+                            <a href="../it/glpi.html" class="block px-4 py-2 text-gray-800 hover:bg-custom-orange">Inventario (GLPI)</a>
+                        </div>
+                    </div>
+                    <!-- Sales Department -->
+                    <div class="relative dropdown">
+                        <button class="text-gray-600 hover:text-custom-orange">Para Ventas</button>
+                        <div class="dropdown-menu bg-white rounded-md shadow-lg mt-2 py-2 w-48">
+                            <a href="../sales/ai-bots.html" class="block px-4 py-2 text-gray-800 hover:bg-custom-orange">Bots con IA</a>
+                            <a href="../sales/crm.html" class="block px-4 py-2 text-gray-800 hover:bg-custom-orange">CRM</a>
+                        </div>
+                    </div>
+                    <!-- Customer Service Department -->
+                    <div class="relative dropdown">
+                        <button class="text-gray-600 hover:text-custom-orange">Para Servicio al Cliente</button>
+                        <div class="dropdown-menu bg-white rounded-md shadow-lg mt-2 py-2 w-56">
+                            <a href="../customer-service/ai-bots.html" class="block px-4 py-2 text-gray-800 hover:bg-custom-orange">Bots con IA</a>
+                            <a href="../customer-service/ticketing.html" class="block px-4 py-2 text-gray-800 hover:bg-custom-orange">Plataformas de Tickets</a>
+                        </div>
+                    </div>
+                    <!-- Marketing Department -->
+                    <div class="relative dropdown">
+                        <button class="text-gray-600 hover:text-custom-orange">Para Marketing</button>
+                        <div class="dropdown-menu bg-white rounded-md shadow-lg mt-2 py-2 w-56">
+                            <a href="contact-center.html" class="block px-4 py-2 text-gray-800 hover:bg-custom-orange">Contact Center</a>
+                            <a href="voice-bots.html" class="block px-4 py-2 text-gray-800 hover:bg-custom-orange">Bots de Voz</a>
+                        </div>
+                    </div>
+                </nav>
+                 <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-800 focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Product Section -->
+    <main class="container mx-auto px-6 py-12">
+        <h1 class="text-4xl font-bold text-gray-800 mb-4">Soluciones de Contact Center para Marketing</h1>
+        <p class="text-lg text-gray-600 mb-8">Potencie sus campañas de marketing entrantes y salientes con una plataforma de contact center robusta y escalable.</p>
+
+        <div class="flex flex-wrap -mx-4">
+            <!-- Image -->
+            <div class="w-full md:w-1/2 px-4 mb-8">
+                <img src="https://placehold.co/600x400/f6ad55/4a5568?text=Contact+Center" alt="Soluciones de Contact Center" class="rounded-lg shadow-lg">
+            </div>
+
+            <!-- Features -->
+            <div class="w-full md:w-1/2 px-4">
+                <h2 class="text-2xl font-bold text-gray-800 mb-4">Características Principales</h2>
+                <ul class="list-disc list-inside text-gray-600 space-y-2">
+                    <li>Gestión de campañas de llamadas salientes (telemarketing).</li>
+                    <li>Marcador predictivo, progresivo y manual.</li>
+                    <li>Recepción y enrutamiento de llamadas entrantes (ACD).</li>
+                    <li>Respuesta de Voz Interactiva (IVR) para autoatención.</li>
+                    <li>Grabación de llamadas para control de calidad y formación.</li>
+                    <li>Monitoreo de agentes en tiempo real.</li>
+                    <li>Scripts y guiones dinámicos para agentes.</li>
+                    <li>Integración con CRM para vista 360° del cliente.</li>
+                    <li>Gestión de listas de contactos y DNC (No Llamar).</li>
+                    <li>Informes detallados de rendimiento de campañas y agentes.</li>
+                    <li>Soporte para agentes remotos y en sitio.</li>
+                    <li>Comunicación omnicanal (voz, email, chat, SMS).</li>
+                    <li>Programación de devolución de llamadas (callbacks).</li>
+                    <li>Encuestas post-llamada para medir la satisfacción.</li>
+                    <li>Identificación de llamadas y enrutamiento basado en habilidades.</li>
+                    <li>Muro de supervisión (Wallboard) con KPIs en vivo.</li>
+                    <li>Análisis de voz y transcripción de llamadas.</li>
+                    <li>Cumplimiento de normativas como PCI-DSS y GDPR.</li>
+                    <li>Alta disponibilidad y escalabilidad en la nube.</li>
+                    <li>API para integraciones personalizadas.</li>
+                    <li>Herramientas de gamificación para motivar a los agentes.</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 mt-12">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2024 Sempitecno. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
