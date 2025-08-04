@@ -13,12 +13,12 @@
                 <a href="/" class="text-2xl font-bold"><span class="text-gray-900">Sempi</span><span class="text-pink-500">tecno</span></a>
             </div>
             <div class="hidden md:flex items-center space-x-4">
-                <div class="relative group">
-                    <button class="text-gray-600 group-hover:text-pink-500 focus:outline-none flex items-center">
+                <div class="relative" id="products-menu">
+                    <button class="text-gray-600 hover:text-pink-500 focus:outline-none flex items-center">
                         <span>Productos</span>
                         <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                     </button>
-                    <div class="absolute z-10 hidden group-hover:block bg-white shadow-lg rounded-md mt-2 w-max">
+                    <div id="products-dropdown" class="absolute z-10 hidden bg-white shadow-lg rounded-md mt-2 w-max">
                         <div class="p-4 grid grid-cols-2 gap-4">
                             <div>
                                 <h3 class="font-bold text-gray-800">Para Departamentos de IT</h3>
@@ -56,11 +56,73 @@
         </nav>
     </header>
 
-    <main class="container mx-auto px-6 py-12">
-        <div class="text-center">
-            <h1 class="text-4xl font-extrabold text-gray-900">Bienvenido a Sempitecno</h1>
-            <p class="mt-4 text-lg text-gray-600">Innovación y tecnología para potenciar tu negocio.</p>
+    <main>
+        <!-- Hero Section -->
+        <div class="relative">
+            <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726a?q=80&w=1920&auto=format&fit=crop" alt="Tecnología" class="w-full h-96 object-cover">
+            <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+                <div class="text-center text-white">
+                    <h1 class="text-5xl font-extrabold">Soluciones Tecnológicas para un Mundo Digital</h1>
+                    <p class="mt-4 text-xl">Potenciamos tu empresa con innovación, automatización e inteligencia artificial.</p>
+                    <a href="pages/contact.html" class="mt-8 inline-block bg-pink-500 hover:bg-pink-600 text-white font-bold py-3 px-6 rounded-lg">Contáctanos</a>
+                </div>
+            </div>
         </div>
+
+        <!-- Featured Products Section -->
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl font-extrabold text-center text-gray-900">Nuestros Productos Destacados</h2>
+                <div class="mt-12 grid md:grid-cols-3 gap-8">
+                    <div class="bg-gray-100 rounded-lg shadow-md overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1580894908361-967195033215?q=80&w=800&auto=format&fit=crop" alt="Monitoreo de IT" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-gray-900">Monitoreo de IT</h3>
+                            <p class="mt-2 text-gray-600">Plataformas como Zabbix para tener una visibilidad completa de tu infraestructura.</p>
+                            <a href="pages/products/zabbix.html" class="mt-4 inline-block text-pink-500 hover:text-pink-600 font-semibold">Leer más</a>
+                        </div>
+                    </div>
+                    <div class="bg-gray-100 rounded-lg shadow-md overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?q=80&w=800&auto=format&fit=crop" alt="Bots con IA" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-gray-900">Bots con IA</h3>
+                            <p class="mt-2 text-gray-600">Automatiza la atención al cliente y las ventas con nuestros bots inteligentes.</p>
+                            <a href="pages/products/ai-bots.html" class="mt-4 inline-block text-pink-500 hover:text-pink-600 font-semibold">Leer más</a>
+                        </div>
+                    </div>
+                    <div class="bg-gray-100 rounded-lg shadow-md overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?q=80&w=800&auto=format&fit=crop" alt="CRM" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-gray-900">CRM para Ventas</h3>
+                            <p class="mt-2 text-gray-600">Gestiona tus clientes y oportunidades de venta con Twenty CRM.</p>
+                            <a href="pages/products/twenty-crm.html" class="mt-4 inline-block text-pink-500 hover:text-pink-600 font-semibold">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us? Section -->
+        <section class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl font-extrabold text-center text-gray-900">¿Por Qué Elegir Sempitecno?</h2>
+                <div class="mt-12 grid md:grid-cols-3 gap-8 text-center">
+                    <div>
+                        <h3 class="text-2xl font-bold text-gray-900">Innovación Constante</h3>
+                        <p class="mt-2 text-gray-600">Estamos siempre a la vanguardia de la tecnología para ofrecerte las mejores soluciones.</p>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold text-gray-900">Soporte Experto</h3>
+                        <p class="mt-2 text-gray-600">Nuestro equipo de expertos está listo para ayudarte a implementar y gestionar tus plataformas.</p>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold text-gray-900">Soluciones a Medida</h3>
+                        <p class="mt-2 text-gray-600">Adaptamos nuestras soluciones a las necesidades específicas de tu negocio.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
 
     <footer class="bg-gray-800 text-white mt-12">
@@ -68,5 +130,17 @@
             <p>&copy; 2024 Sempitecno. Todos los derechos reservados.</p>
         </div>
     </footer>
+    <script>
+        const productsMenu = document.getElementById('products-menu');
+        const productsDropdown = document.getElementById('products-dropdown');
+
+        productsMenu.addEventListener('mouseenter', () => {
+            productsDropdown.classList.remove('hidden');
+        });
+
+        productsMenu.addEventListener('mouseleave', () => {
+            productsDropdown.classList.add('hidden');
+        });
+    </script>
 </body>
 </html>
