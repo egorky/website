@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zammad - Plataforma de Tickets - Sempitecno</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <header class="bg-white shadow-md">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div>
+                <a href="../../index.html" class="text-2xl font-bold"><span class="text-gray-900">Sempi</span><span class="text-pink-500">tecno</span></a>
+            </div>
+            <div class="hidden md:flex items-center space-x-4">
+                <div class="relative" id="products-menu">
+                    <button class="text-gray-600 hover:text-pink-500 focus:outline-none flex items-center">
+                        <span>Productos</span>
+                        <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div id="products-dropdown" class="absolute z-10 hidden bg-white shadow-lg rounded-md mt-2 w-max">
+                        <div class="p-4 grid grid-cols-2 gap-4">
+                            <div>
+                                <h3 class="font-bold text-gray-800">Para Departamentos de IT</h3>
+                                <a href="zabbix.html" class="block mt-2 text-gray-600 hover:text-pink-500">Zabbix</a>
+                                <a href="otobo.html" class="block mt-1 text-gray-600 hover:text-pink-500">Otobo</a>
+                                <a href="glpi.html" class="block mt-1 text-gray-600 hover:text-pink-500">GLPI</a>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-gray-800">Para Departamentos de Ventas</h3>
+                                <a href="ai-bots.html" class="block mt-2 text-gray-600 hover:text-pink-500">Bots con IA</a>
+                                <a href="twenty-crm.html" class="block mt-1 text-gray-600 hover:text-pink-500">Twenty CRM</a>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-gray-800">Para Servicio al Cliente</h3>
+                                <a href="ai-bots.html" class="block mt-2 text-gray-600 hover:text-pink-500">Bots con IA</a>
+                                <a href="zammad.html" class="block mt-1 text-gray-600 hover:text-pink-500">Zammad</a>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-gray-800">Para Departamentos de Marketing</h3>
+                                <a href="contact-center.html" class="block mt-2 text-gray-600 hover:text-pink-500">Contact Center</a>
+                                <a href="voice-bots.html" class="block mt-1 text-gray-600 hover:text-pink-500">Bots de Voz</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="../industries.html" class="text-gray-600 hover:text-pink-500">Industrias</a>
+                <a href="../about.html" class="text-gray-600 hover:text-pink-500">Nosotros</a>
+                <a href="../contact.html" class="text-gray-600 hover:text-pink-500">Contacto</a>
+            </div>
+            <div class="md:hidden">
+                <button class="text-gray-600 hover:text-pink-500 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mx-auto px-6 py-12">
+        <div class="text-center">
+            <h1 class="text-4xl font-extrabold text-gray-900">Zammad</h1>
+            <p class="mt-4 text-lg text-gray-600">La plataforma de tickets moderna para un servicio al cliente excepcional.</p>
+        </div>
+        <div class="mt-12">
+            <img src="https://via.placeholder.com/1200x400" alt="Zammad" class="rounded-lg shadow-md mx-auto">
+        </div>
+        <div class="mt-12">
+            <h2 class="text-3xl font-bold text-gray-900">Características Principales</h2>
+            <ul class="mt-6 grid md:grid-cols-2 lg:grid-cols-3 gap-6 list-disc list-inside">
+                <li class="text-gray-700">Integración multicanal: Email, Teléfono, Chat, WhatsApp, Telegram, etc.</li>
+                <li class="text-gray-700">Base de conocimientos integrada para autoservicio de clientes y agentes.</li>
+                <li class="text-gray-700">Gestión de Acuerdos de Nivel de Servicio (SLA) y escalaciones.</li>
+                <li class="text-gray-700">Flujos de trabajo y automatizaciones para optimizar la gestión de tickets.</li>
+                <li class="text-gray-700">Campos personalizados para adaptar los tickets a tus necesidades.</li>
+                <li class="text-gray-700">Vistas de tickets personalizables para cada equipo o agente.</li>
+                <li class="text-gray-700">Historial completo de cambios en cada ticket para auditorías.</li>
+                <li class="text-gray-700">Chat en vivo para una comunicación instantánea con los clientes.</li>
+                <li class="text-gray-700">Detección automática de idioma en los tickets entrantes.</li>
+                <li class="text-gray-700">Soporte para más de 40 idiomas en la interfaz de usuario.</li>
+                <li class="text-gray-700">Portal del cliente para que puedan seguir el estado de sus solicitudes.</li>
+                <li class="text-gray-700">Respuestas predefinidas (módulos de texto) para acelerar las respuestas.</li>
+                <li class="text-gray-700">Búsqueda de texto completo que incluye archivos adjuntos.</li>
+                <li class="text-gray-700">Registro de tiempo para medir el esfuerzo en cada ticket.</li>
+                <li class="text-gray-700">Posibilidad de agrupar, dividir y vincular tickets relacionados.</li>
+                <li class="text-gray-700">Advertencia de conflicto para evitar que dos agentes editen un ticket a la vez.</li>
+                <li class="text-gray-700">Diseño adaptable (responsive) para una experiencia perfecta en móviles.</li>
+                <li class="text-gray-700">Importación de datos sencilla a través de archivos CSV.</li>
+                <li class="text-gray-700">API completa para integraciones con otros sistemas.</li>
+                <li class="text-gray-700">Personalización de la marca (logo, colores, CSS).</li>
+                <li class="text-gray-700">Gestión de ausencias con asignación automática a sustitutos.</li>
+                <li class="text-gray-700">Informes y análisis para medir el rendimiento del equipo.</li>
+            </ul>
+        </div>
+    </main>
+
+    <footer class="bg-gray-800 text-white mt-12">
+        <div class="container mx-auto px-6 py-4 text-center">
+            <p>&copy; 2024 Sempitecno. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script>
+        const productsMenu = document.getElementById('products-menu');
+        const productsDropdown = document.getElementById('products-dropdown');
+
+        productsMenu.addEventListener('mouseenter', () => {
+            productsDropdown.classList.remove('hidden');
+        });
+
+        productsMenu.addEventListener('mouseleave', () => {
+            productsDropdown.classList.add('hidden');
+        });
+    </script>
+</body>
+</html>
