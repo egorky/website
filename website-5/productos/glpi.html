@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GLPI - Inventario y Mesa de Ayuda - Sempitecno</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <style>
+        :root {
+            --color-light-gray: #F3F4F6;
+            --color-light-pink: #FFF1F2;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <header class="bg-white shadow-md sticky top-0 z-50 border-b border-gray-200">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="../index.html">
+                <svg width="160" height="28" xmlns="http://www.w3.org/2000/svg"><text x="0" y="22" font-family="sans-serif" font-size="24" font-weight="600" fill="#1F2937">Sempi<tspan fill="#EC4899">tecno</tspan></text></svg>
+            </a>
+            <nav class="hidden md:flex items-center space-x-8">
+                <div class="relative group">
+                    <button class="text-pink-500 transition duration-300 font-medium">Productos <svg class="w-4 h-4 inline-block ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
+                    <div class="absolute left-0 mt-2 w-max bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform scale-95 group-hover:scale-100 origin-top-left">
+                        <div class="p-5 grid grid-cols-2 gap-x-10 gap-y-6">
+                            <div><h3 class="font-bold text-gray-800 mb-2 text-sm">PARA DPTO. DE IT</h3><a href="zabbix.html" class="block text-gray-600 hover:text-pink-500 py-1 text-sm">Zabbix</a><a href="otobo.html" class="block text-gray-600 hover:text-pink-500 py-1 text-sm">Otobo</a><a href="glpi.html" class="block text-pink-500 py-1 text-sm">GLPI</a></div>
+                            <div><h3 class="font-bold text-gray-800 mb-2 text-sm">PARA VENTAS</h3><a href="ia-bots-ventas.html" class="block text-gray-600 hover:text-pink-500 py-1 text-sm">Bots con IA</a><a href="twenty-crm.html" class="block text-gray-600 hover:text-pink-500 py-1 text-sm">CRM Twenty</a></div>
+                            <div><h3 class="font-bold text-gray-800 mb-2 text-sm">PARA SERVICIO AL CLIENTE</h3><a href="ia-bots-servicio.html" class="block text-gray-600 hover:text-pink-500 py-1 text-sm">Bots con IA</a><a href="zammad.html" class="block text-gray-600 hover:text-pink-500 py-1 text-sm">Zammad</a></div>
+                            <div><h3 class="font-bold text-gray-800 mb-2 text-sm">PARA MARKETING</h3><a href="contact-center.html" class="block text-gray-600 hover:text-pink-500 py-1 text-sm">Contact Center</a><a href="voice-bots.html" class="block text-gray-600 hover:text-pink-500 py-1 text-sm">Bots de Voz</a></div>
+                        </div>
+                    </div>
+                </div>
+                <a href="../pages/nosotros.html" class="text-gray-600 hover:text-pink-500 transition duration-300 font-medium">Nosotros</a>
+                <a href="../pages/industria.html" class="text-gray-600 hover:text-pink-500 transition duration-300 font-medium">Industria</a>
+                <a href="../pages/contactarnos.html" class="bg-pink-500 text-white px-5 py-2 rounded-full text-sm font-semibold hover:bg-pink-600 transition duration-300">Contactarnos</a>
+            </nav>
+            <div class="md:hidden"><button id="mobile-menu-button" class="text-gray-700 focus:outline-none"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg></button></div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="../index.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Inicio</a>
+                <a href="../pages/nosotros.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Nosotros</a>
+                <a href="../pages/industria.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Industria</a>
+                <a href="../pages/contactarnos.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Contactarnos</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Product Hero Section -->
+        <section class="bg-white py-12">
+            <div class="container mx-auto px-6">
+                <div class="flex flex-col md:flex-row items-center">
+                    <div class="md:w-1/2">
+                        <h1 class="text-4xl font-bold text-gray-800 mb-2">GLPI</h1>
+                        <h2 class="text-xl font-semibold text-pink-500 mb-4">Gestión Integral de Activos y Servicios de TI</h2>
+                        <p class="text-gray-600">GLPI es una solución completa para la gestión del ciclo de vida de los activos de TI (ITAM), la gestión de servicios (ITSM) y la gestión financiera. Centraliza el inventario automático de tu parque informático y vincula cada activo con un sistema de mesa de ayuda potente y flexible.</p>
+                    </div>
+                    <div class="md:w-1/2 mt-8 md:mt-0 flex justify-center">
+                        <img src="https://placehold.co/500x300/E0E7FF/333333?text=GLPI+ITAM+y+ITSM" alt="Inventario y Mesa de Ayuda GLPI" class="rounded-lg shadow-xl">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Features Section -->
+        <section class="py-16">
+            <div class="container mx-auto px-6">
+                <h3 class="text-3xl font-bold text-center text-gray-800 mb-10">Características Principales</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="bg-white p-6 rounded-lg shadow-sm"><strong>Inventario Automático:</strong> Descubre y recolecta información de hardware y software de la red (vía plugins).</div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm"><strong>Gestión de Activos (CMDB):</strong> Administra computadoras, software, impresoras, dispositivos de red y más.</div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm"><strong>Mesa de Ayuda (Helpdesk):</strong> Sistema de tickets para gestionar incidentes, solicitudes, problemas y cambios.</div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm"><strong>Gestión de Licencias de Software:</strong> Controla el uso de licencias y asegura el cumplimiento normativo.</div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm"><strong>Gestión Financiera y de Contratos:</strong> Administra presupuestos, proveedores, contratos y facturación.</div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm"><strong>Base de Conocimientos:</strong> Centraliza el conocimiento interno y crea FAQs públicas para autoservicio.</div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm"><strong>Gestión de Reservas:</strong> Permite a los usuarios reservar equipos y salas compartidas.</div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm"><strong>Soporte Multi-Entidad:</strong> Aísla los datos y procesos para diferentes departamentos u organizaciones en una sola instancia.</div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm"><strong>Gestión de Proyectos:</strong> Administra proyectos, asigna tareas y visualiza el progreso con diagramas de Gantt y Kanban.</div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm"><strong>Formularios Personalizados:</strong> Crea formularios de tickets a medida para diferentes tipos de solicitudes.</div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm"><strong>Definición de SLAs:</strong> Establece y monitorea Acuerdos de Nivel de Servicio para garantizar la calidad.</div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm"><strong>Motor de Reglas de Negocio:</strong> Automatiza acciones como asignación de tickets, notificaciones y más.</div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm"><strong>Reportes Avanzados:</strong> Genera informes detallados sobre activos, tickets y rendimiento del servicio.</div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm"><strong>Notificaciones Automáticas:</strong> Mantiene a todos los interesados informados sobre el estado de los tickets y activos.</div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm"><strong>Autenticación Externa:</strong> Se integra con LDAP, Active Directory, CAS y más.</div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm"><strong>Gestión de Consumibles:</strong> Lleva un control del stock y uso de cartuchos, toners y otros consumibles.</div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm"><strong>Historial y Auditoría:</strong> Registra todos los cambios en activos y tickets para una trazabilidad completa.</div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm"><strong>Interfaz de Autoservicio:</strong> Interfaz simplificada para que los usuarios finales puedan crear y seguir sus tickets.</div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm"><strong>Soporte para Múltiples Idiomas:</strong> Interfaz traducida a numerosos idiomas.</div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm"><strong>Sistema de Plugins:</strong> Extiende la funcionalidad nativa con una amplia gama de plugins de la comunidad.</div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm"><strong>Gestión de Líneas Telefónicas y SIMs:</strong> Centraliza la información de tu parque de telefonía.</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white">
+        <p class="p-4 text-center">© 2024 Sempitecno. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="../assets/js/main.js" defer></script>
+</body>
+</html>

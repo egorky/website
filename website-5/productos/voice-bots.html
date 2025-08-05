@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bots de Voz con IA - Sempitecno</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <style>
+        :root {
+            --color-light-gray: #F3F4F6;
+            --color-light-pink: #FFF1F2;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <header class="bg-white shadow-md sticky top-0 z-50 border-b border-gray-200">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="../index.html">
+                <svg width="160" height="28" xmlns="http://www.w3.org/2000/svg"><text x="0" y="22" font-family="sans-serif" font-size="24" font-weight="600" fill="#1F2937">Sempi<tspan fill="#EC4899">tecno</tspan></text></svg>
+            </a>
+            <nav class="hidden md:flex items-center space-x-8">
+                <div class="relative group">
+                    <button class="text-pink-500 transition duration-300 font-medium">Productos <svg class="w-4 h-4 inline-block ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
+                    <div class="absolute left-0 mt-2 w-max bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform scale-95 group-hover:scale-100 origin-top-left">
+                        <div class="p-5 grid grid-cols-2 gap-x-10 gap-y-6">
+                            <div><h3 class="font-bold text-gray-800 mb-2 text-sm">PARA DPTO. DE IT</h3><a href="zabbix.html" class="block text-gray-600 hover:text-pink-500 py-1 text-sm">Zabbix</a><a href="otobo.html" class="block text-gray-600 hover:text-pink-500 py-1 text-sm">Otobo</a><a href="glpi.html" class="block text-gray-600 hover:text-pink-500 py-1 text-sm">GLPI</a></div>
+                            <div><h3 class="font-bold text-gray-800 mb-2 text-sm">PARA VENTAS</h3><a href="ia-bots-ventas.html" class="block text-gray-600 hover:text-pink-500 py-1 text-sm">Bots con IA</a><a href="twenty-crm.html" class="block text-gray-600 hover:text-pink-500 py-1 text-sm">CRM Twenty</a></div>
+                            <div><h3 class="font-bold text-gray-800 mb-2 text-sm">PARA SERVICIO AL CLIENTE</h3><a href="ia-bots-servicio.html" class="block text-gray-600 hover:text-pink-500 py-1 text-sm">Bots con IA</a><a href="zammad.html" class="block text-gray-600 hover:text-pink-500 py-1 text-sm">Zammad</a></div>
+                            <div><h3 class="font-bold text-gray-800 mb-2 text-sm">PARA MARKETING</h3><a href="contact-center.html" class="block text-gray-600 hover:text-pink-500 py-1 text-sm">Contact Center</a><a href="voice-bots.html" class="block text-pink-500 py-1 text-sm">Bots de Voz</a></div>
+                        </div>
+                    </div>
+                </div>
+                <a href="../pages/nosotros.html" class="text-gray-600 hover:text-pink-500 transition duration-300 font-medium">Nosotros</a>
+                <a href="../pages/industria.html" class="text-gray-600 hover:text-pink-500 transition duration-300 font-medium">Industria</a>
+                <a href="../pages/contactarnos.html" class="bg-pink-500 text-white px-5 py-2 rounded-full text-sm font-semibold hover:bg-pink-600 transition duration-300">Contactarnos</a>
+            </nav>
+            <div class="md:hidden"><button id="mobile-menu-button" class="text-gray-700 focus:outline-none"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg></button></div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="../index.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Inicio</a>
+                <a href="../pages/nosotros.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Nosotros</a>
+                <a href="../pages/industria.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Industria</a>
+                <a href="../pages/contactarnos.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Contactarnos</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Product Hero Section -->
+        <section class="bg-white py-12">
+            <div class="container mx-auto px-6">
+                <div class="flex flex-col md:flex-row items-center">
+                    <div class="md:w-1/2">
+                        <h1 class="text-4xl font-bold text-gray-800 mb-2">Bots de Voz con IA</h1>
+                        <h2 class="text-xl font-semibold text-pink-500 mb-4">Automatización de Llamadas Entrantes y Salientes</h2>
+                        <p class="text-gray-600">Lleva tus campañas de marketing y comunicación al siguiente nivel con nuestros Bots de Voz. Pueden realizar y recibir miles de llamadas simultáneamente para agendar citas, confirmar asistencias, enviar recordatorios, realizar encuestas y mucho más, todo con una voz natural y una inteligencia conversacional avanzada.</p>
+                    </div>
+                    <div class="md:w-1/2 mt-8 md:mt-0 flex justify-center">
+                        <img src="https://placehold.co/500x300/FDF2F8/333333?text=Voice+Bot" alt="Bot de Voz con IA" class="rounded-lg shadow-xl">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Features Section -->
+        <section class="py-16">
+            <div class="container mx-auto px-6">
+                <h3 class="text-3xl font-bold text-center text-gray-800 mb-10">Características Principales</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="bg-white p-6 rounded-lg shadow-sm"><strong>Llamadas Salientes Masivas:</strong> Ejecuta campañas de marketing, notificaciones o recordatorios a gran escala.</div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm"><strong>Recepción de Llamadas Entrantes:</strong> Funciona como un IVR conversacional para atender y enrutar llamadas.</div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm"><strong>Comprensión de Lenguaje Natural (NLU):</strong> Entiende la intención del usuario en una conversación fluida.</div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm"><strong>Síntesis de Voz Natural (TTS):</strong> Voces personalizables en múltiples idiomas y acentos.</div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm"><strong>Agendamiento de Citas:</strong> Se integra con calendarios para buscar y reservar huecos disponibles.</div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm"><strong>Recordatorios Automáticos:</strong> Reduce el ausentismo para citas, eventos y pagos pendientes.</div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm"><strong>Encuestas Telefónicas:</strong> Realiza encuestas de satisfacción (CSAT/NPS) o de investigación de mercado.</div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm"><strong>Calificación de Leads:</strong> Filtra las llamadas entrantes y califica a los leads antes de transferirlos a un agente.</div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm"><strong>Integración con CRM y APIs:</strong> Personaliza cada llamada con datos del cliente y registra los resultados.</div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm"><strong>Escalamiento a Agentes Humanos:</strong> Transfiere la llamada a un agente en vivo si es necesario, con todo el contexto.</div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm"><strong>Constructor Visual de Flujos:</strong> Diseña las conversaciones y la lógica de las llamadas sin programar.</div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm"><strong>Análisis y Reportes:</strong> Monitorea el rendimiento de las campañas con métricas detalladas.</div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm"><strong>Transcripción de Llamadas:</strong> Convierte las conversaciones de voz a texto para su análisis y auditoría.</div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm"><strong>Análisis de Sentimiento por Voz:</strong> Detecta el tono y la emoción del cliente para adaptar la conversación.</div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm"><strong>Detección de Contestador Automático:</strong> Identifica si responde una máquina para dejar un mensaje o reintentar.</div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm"><strong>Soporte de Interrupciones (Barge-in):</strong> Permite a los usuarios hablar en cualquier momento para una interacción más natural.</div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm"><strong>Verificación de Identidad:</strong> Confirma la identidad del usuario a través de la voz o datos personales.</div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm"><strong>Cumplimiento de Normativas:</strong> Gestiona el consentimiento y las regulaciones de llamadas (TCPA, GDPR).</div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm"><strong>Conectividad SIP Trunk:</strong> Se integra con tu infraestructura de telefonía existente.</div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm"><strong>Disparadores Basados en Eventos:</strong> Inicia llamadas automáticamente a partir de acciones en otros sistemas.</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white">
+        <p class="p-4 text-center">© 2024 Sempitecno. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="../assets/js/main.js" defer></script>
+</body>
+</html>

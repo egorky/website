@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRM Twenty - Gestión de Clientes - Sempitecno</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <style>
+        :root {
+            --color-light-gray: #F3F4F6;
+            --color-light-pink: #FFF1F2;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <header class="bg-white shadow-md sticky top-0 z-50 border-b border-gray-200">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="../index.html">
+                <svg width="160" height="28" xmlns="http://www.w3.org/2000/svg"><text x="0" y="22" font-family="sans-serif" font-size="24" font-weight="600" fill="#1F2937">Sempi<tspan fill="#EC4899">tecno</tspan></text></svg>
+            </a>
+            <nav class="hidden md:flex items-center space-x-8">
+                <div class="relative group">
+                    <button class="text-pink-500 transition duration-300 font-medium">Productos <svg class="w-4 h-4 inline-block ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
+                    <div class="absolute left-0 mt-2 w-max bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform scale-95 group-hover:scale-100 origin-top-left">
+                        <div class="p-5 grid grid-cols-2 gap-x-10 gap-y-6">
+                            <div><h3 class="font-bold text-gray-800 mb-2 text-sm">PARA DPTO. DE IT</h3><a href="zabbix.html" class="block text-gray-600 hover:text-pink-500 py-1 text-sm">Zabbix</a><a href="otobo.html" class="block text-gray-600 hover:text-pink-500 py-1 text-sm">Otobo</a><a href="glpi.html" class="block text-gray-600 hover:text-pink-500 py-1 text-sm">GLPI</a></div>
+                            <div><h3 class="font-bold text-gray-800 mb-2 text-sm">PARA VENTAS</h3><a href="ia-bots-ventas.html" class="block text-gray-600 hover:text-pink-500 py-1 text-sm">Bots con IA</a><a href="twenty-crm.html" class="block text-pink-500 py-1 text-sm">CRM Twenty</a></div>
+                            <div><h3 class="font-bold text-gray-800 mb-2 text-sm">PARA SERVICIO AL CLIENTE</h3><a href="ia-bots-servicio.html" class="block text-gray-600 hover:text-pink-500 py-1 text-sm">Bots con IA</a><a href="zammad.html" class="block text-gray-600 hover:text-pink-500 py-1 text-sm">Zammad</a></div>
+                            <div><h3 class="font-bold text-gray-800 mb-2 text-sm">PARA MARKETING</h3><a href="contact-center.html" class="block text-gray-600 hover:text-pink-500 py-1 text-sm">Contact Center</a><a href="voice-bots.html" class="block text-gray-600 hover:text-pink-500 py-1 text-sm">Bots de Voz</a></div>
+                        </div>
+                    </div>
+                </div>
+                <a href="../pages/nosotros.html" class="text-gray-600 hover:text-pink-500 transition duration-300 font-medium">Nosotros</a>
+                <a href="../pages/industria.html" class="text-gray-600 hover:text-pink-500 transition duration-300 font-medium">Industria</a>
+                <a href="../pages/contactarnos.html" class="bg-pink-500 text-white px-5 py-2 rounded-full text-sm font-semibold hover:bg-pink-600 transition duration-300">Contactarnos</a>
+            </nav>
+            <div class="md:hidden"><button id="mobile-menu-button" class="text-gray-700 focus:outline-none"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg></button></div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="../index.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Inicio</a>
+                <a href="../pages/nosotros.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Nosotros</a>
+                <a href="../pages/industria.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Industria</a>
+                <a href="../pages/contactarnos.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Contactarnos</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Product Hero Section -->
+        <section class="bg-white py-12">
+            <div class="container mx-auto px-6">
+                <div class="flex flex-col md:flex-row items-center">
+                    <div class="md:w-1/2">
+                        <h1 class="text-4xl font-bold text-gray-800 mb-2">Twenty CRM</h1>
+                        <h2 class="text-xl font-semibold text-pink-500 mb-4">El CRM Open-Source para la Era Moderna</h2>
+                        <p class="text-gray-600">Twenty es una plataforma de gestión de relaciones con el cliente (CRM) de código abierto, diseñada para ser potente, moderna y asequible. Te da el control total sobre los datos de tus clientes y se adapta a tus flujos de trabajo únicos, permitiéndote construir relaciones más fuertes y cerrar más negocios.</p>
+                    </div>
+                    <div class="md:w-1/2 mt-8 md:mt-0 flex justify-center">
+                        <img src="https://placehold.co/500x300/E9D5FF/333333?text=Twenty+CRM" alt="CRM Twenty" class="rounded-lg shadow-xl">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Features Section -->
+        <section class="py-16">
+            <div class="container mx-auto px-6">
+                <h3 class="text-3xl font-bold text-center text-gray-800 mb-10">Características Principales</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="bg-white p-6 rounded-lg shadow-sm"><strong>100% Código Abierto (GPL):</strong> Eres dueño del software, no lo alquilas. Libertad y ahorro de costos.</div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm"><strong>Gestión de Contactos y Empresas:</strong> Vista 360° de tus clientes, con todo su historial y datos.</div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm"><strong>Pipeline de Ventas Visual:</strong> Gestiona tus oportunidades de venta en tableros Kanban intuitivos.</div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm"><strong>Modelo de Datos Personalizable:</strong> Adapta el CRM a tu negocio creando objetos y campos a medida.</div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm"><strong>Vistas Personalizadas:</strong> Cada usuario puede configurar sus propias vistas para enfocarse en lo importante.</div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm"><strong>Gestión de Tareas:</strong> Asigna y da seguimiento a tareas para que ninguna oportunidad se pierda.</div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm"><strong>Automatización de Flujos de Trabajo:</strong> Ahorra tiempo automatizando procesos y tareas repetitivas.</div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm"><strong>Notas Enriquecidas:</strong> Toma notas detalladas con formato markdown para un contexto completo.</div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm"><strong>Sincronización de Email:</strong> Integra tu correo para mantener el CRM actualizado con las últimas conversaciones.</div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm"><strong>Roles y Permisos de Usuario:</strong> Controla quién tiene acceso a qué información.</div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm"><strong>Potente API y Webhooks:</strong> Conecta Twenty con todas tus herramientas favoritas.</div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm"><strong>Comando Rápido (⌘K):</strong> Navega y ejecuta acciones en el CRM a la velocidad del pensamiento.</div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm"><strong>Modo Oscuro:</strong> Trabaja cómodamente en cualquier condición de iluminación.</div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm"><strong>Comunidad Activa:</strong> Benefíciate del soporte y las contribuciones de una comunidad global.</div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm"><strong>Seguridad por Diseño:</strong> La transparencia del código abierto permite una rápida identificación de vulnerabilidades.</div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm"><strong>Importación de Datos:</strong> Migra fácilmente tus datos de clientes desde otras plataformas.</div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm"><strong>Sistema de Favoritos:</strong> Mantén a tus clientes y oportunidades más importantes siempre a la vista.</div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm"><strong>Diseño Moderno e Intuitivo:</strong> Una interfaz de usuario limpia y agradable que tu equipo amará usar.</div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm"><strong>Hoja de Ruta Abierta:</strong> Participa en la evolución del producto sugiriendo y votando por nuevas características.</div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm"><strong>Sin Dependencia de Proveedor (No Vendor Lock-in):</strong> Total libertad para alojar y modificar el software como necesites.</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white">
+        <p class="p-4 text-center">© 2024 Sempitecno. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="../assets/js/main.js" defer></script>
+</body>
+</html>
