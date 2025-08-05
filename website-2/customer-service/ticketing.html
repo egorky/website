@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plataformas de Tickets - Sempitecno</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { background-color: #f7fafc; }
+        .bg-custom-orange { background-color: #fffaf0; }
+        .text-custom-orange { color: #dd6b20; }
+        .dropdown:hover .dropdown-menu { display: block; }
+        .dropdown-menu { display: none; position: absolute; z-index: 10; }
+    </style>
+</head>
+<body class="font-sans">
+
+    <!-- Header -->
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div>
+                    <a href="../index.html" class="text-2xl font-bold text-gray-800">Sempitecno</a>
+                </div>
+                <nav class="hidden md:flex space-x-6">
+                    <!-- IT Department -->
+                    <div class="relative dropdown">
+                        <button class="text-gray-600 hover:text-custom-orange">Para TI</button>
+                        <div class="dropdown-menu bg-white rounded-md shadow-lg mt-2 py-2 w-48">
+                            <a href="../it/zabbix.html" class="block px-4 py-2 text-gray-800 hover:bg-custom-orange">Monitoreo (Zabbix)</a>
+                            <a href="../it/otobo.html" class="block px-4 py-2 text-gray-800 hover:bg-custom-orange">Mesa de Ayuda (Otobo)</a>
+                            <a href="../it/glpi.html" class="block px-4 py-2 text-gray-800 hover:bg-custom-orange">Inventario (GLPI)</a>
+                        </div>
+                    </div>
+                    <!-- Sales Department -->
+                    <div class="relative dropdown">
+                        <button class="text-gray-600 hover:text-custom-orange">Para Ventas</button>
+                        <div class="dropdown-menu bg-white rounded-md shadow-lg mt-2 py-2 w-48">
+                            <a href="../sales/ai-bots.html" class="block px-4 py-2 text-gray-800 hover:bg-custom-orange">Bots con IA</a>
+                            <a href="../sales/crm.html" class="block px-4 py-2 text-gray-800 hover:bg-custom-orange">CRM</a>
+                        </div>
+                    </div>
+                    <!-- Customer Service Department -->
+                    <div class="relative dropdown">
+                        <button class="text-gray-600 hover:text-custom-orange">Para Servicio al Cliente</button>
+                        <div class="dropdown-menu bg-white rounded-md shadow-lg mt-2 py-2 w-56">
+                            <a href="ai-bots.html" class="block px-4 py-2 text-gray-800 hover:bg-custom-orange">Bots con IA</a>
+                            <a href="ticketing.html" class="block px-4 py-2 text-gray-800 hover:bg-custom-orange">Plataformas de Tickets</a>
+                        </div>
+                    </div>
+                    <!-- Marketing Department -->
+                    <div class="relative dropdown">
+                        <button class="text-gray-600 hover:text-custom-orange">Para Marketing</button>
+                        <div class="dropdown-menu bg-white rounded-md shadow-lg mt-2 py-2 w-56">
+                            <a href="../marketing/contact-center.html" class="block px-4 py-2 text-gray-800 hover:bg-custom-orange">Contact Center</a>
+                            <a href="../marketing/voice-bots.html" class="block px-4 py-2 text-gray-800 hover:bg-custom-orange">Bots de Voz</a>
+                        </div>
+                    </div>
+                </nav>
+                 <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-800 focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Product Section -->
+    <main class="container mx-auto px-6 py-12">
+        <h1 class="text-4xl font-bold text-gray-800 mb-4">Plataformas de Tickets por Correo o WhatsApp</h1>
+        <p class="text-lg text-gray-600 mb-8">Unifique la comunicación con sus clientes y gestione todas las solicitudes desde una única plataforma centralizada y eficiente.</p>
+
+        <div class="flex flex-wrap -mx-4">
+            <!-- Image -->
+            <div class="w-full md:w-1/2 px-4 mb-8">
+                <img src="https://placehold.co/600x400/f6ad55/4a5568?text=Ticketing" alt="Plataforma de Ticketing" class="rounded-lg shadow-lg">
+            </div>
+
+            <!-- Features -->
+            <div class="w-full md:w-1/2 px-4">
+                <h2 class="text-2xl font-bold text-gray-800 mb-4">Características Principales</h2>
+                <ul class="list-disc list-inside text-gray-600 space-y-2">
+                    <li>Conversión automática de correos y mensajes de WhatsApp en tickets.</li>
+                    <li>Panel de agente unificado para gestionar todas las conversaciones.</li>
+                    <li>Asignación manual o automática de tickets a los agentes.</li>
+                    <li>Plantillas de respuesta para agilizar la comunicación.</li>
+                    <li>Establecimiento de prioridades y estados para cada ticket.</li>
+                    <li>Acuerdos de Nivel de Servicio (SLAs) para medir tiempos de respuesta.</li>
+                    <li>Colaboración interna mediante notas privadas en los tickets.</li>
+                    <li>Historial completo de la conversación con el cliente.</li>
+                    <li>Búsqueda avanzada de tickets y conversaciones.</li>
+                    <li>Creación de campos personalizados para recopilar información específica.</li>
+                    <li>Automatización de respuestas y acciones basadas en reglas.</li>
+                    <li>Informes de rendimiento: volumen de tickets, tiempos de resolución, etc.</li>
+                    <li>Integración con la base de conocimientos para respuestas rápidas.</li>
+                    <li>Portal de cliente para que puedan ver el estado de sus solicitudes.</li>
+                    <li>Encuestas de satisfacción para medir la calidad del servicio.</li>
+                    <li>Gestión de múltiples buzones de correo o números de WhatsApp.</li>
+                    <li>Etiquetado y categorización de tickets para un mejor análisis.</li>
+                    <li>Fusión de tickets duplicados sobre el mismo asunto.</li>
+                    <li>Alertas y notificaciones para agentes sobre nuevos tickets o actualizaciones.</li>
+                    <li>Interfaz limpia y fácil de usar para los agentes.</li>
+                    <li>Exportación de datos para análisis externo.</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 mt-12">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2024 Sempitecno. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

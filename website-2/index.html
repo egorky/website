@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sempitecno - Soluciones Tecnológicas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles can go here if needed */
+        body {
+            background-color: #f7fafc; /* light gray */
+        }
+        .bg-custom-orange {
+            background-color: #fffaf0; /* very light orange */
+        }
+        .text-custom-orange {
+            color: #dd6b20; /* a darker shade for text */
+        }
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            z-index: 10;
+        }
+    </style>
+</head>
+<body class="font-sans">
+
+    <!-- Header -->
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div>
+                    <a href="index.html" class="text-2xl font-bold text-gray-800">Sempitecno</a>
+                </div>
+                <nav class="hidden md:flex space-x-6">
+                    <!-- IT Department -->
+                    <div class="relative dropdown">
+                        <button class="text-gray-600 hover:text-custom-orange">Para TI</button>
+                        <div class="dropdown-menu bg-white rounded-md shadow-lg mt-2 py-2 w-48">
+                            <a href="it/zabbix.html" class="block px-4 py-2 text-gray-800 hover:bg-custom-orange">Monitoreo (Zabbix)</a>
+                            <a href="it/otobo.html" class="block px-4 py-2 text-gray-800 hover:bg-custom-orange">Mesa de Ayuda (Otobo)</a>
+                            <a href="it/glpi.html" class="block px-4 py-2 text-gray-800 hover:bg-custom-orange">Inventario (GLPI)</a>
+                        </div>
+                    </div>
+                    <!-- Sales Department -->
+                    <div class="relative dropdown">
+                        <button class="text-gray-600 hover:text-custom-orange">Para Ventas</button>
+                        <div class="dropdown-menu bg-white rounded-md shadow-lg mt-2 py-2 w-48">
+                            <a href="sales/ai-bots.html" class="block px-4 py-2 text-gray-800 hover:bg-custom-orange">Bots con IA</a>
+                            <a href="sales/crm.html" class="block px-4 py-2 text-gray-800 hover:bg-custom-orange">CRM</a>
+                        </div>
+                    </div>
+                    <!-- Customer Service Department -->
+                    <div class="relative dropdown">
+                        <button class="text-gray-600 hover:text-custom-orange">Para Servicio al Cliente</button>
+                        <div class="dropdown-menu bg-white rounded-md shadow-lg mt-2 py-2 w-56">
+                            <a href="customer-service/ai-bots.html" class="block px-4 py-2 text-gray-800 hover:bg-custom-orange">Bots con IA</a>
+                            <a href="customer-service/ticketing.html" class="block px-4 py-2 text-gray-800 hover:bg-custom-orange">Plataformas de Tickets</a>
+                        </div>
+                    </div>
+                    <!-- Marketing Department -->
+                    <div class="relative dropdown">
+                        <button class="text-gray-600 hover:text-custom-orange">Para Marketing</button>
+                        <div class="dropdown-menu bg-white rounded-md shadow-lg mt-2 py-2 w-56">
+                            <a href="marketing/contact-center.html" class="block px-4 py-2 text-gray-800 hover:bg-custom-orange">Contact Center</a>
+                            <a href="marketing/voice-bots.html" class="block px-4 py-2 text-gray-800 hover:bg-custom-orange">Bots de Voz</a>
+                        </div>
+                    </div>
+                </nav>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-800 focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4">
+                 <div class="relative dropdown">
+                    <button class="w-full text-left py-2 text-gray-600 hover:text-custom-orange">Para TI</button>
+                    <div class="dropdown-menu bg-white rounded-md shadow-lg mt-2 py-2 w-full">
+                        <a href="it/zabbix.html" class="block px-4 py-2 text-gray-800 hover:bg-custom-orange">Monitoreo (Zabbix)</a>
+                        <a href="it/otobo.html" class="block px-4 py-2 text-gray-800 hover:bg-custom-orange">Mesa de Ayuda (Otobo)</a>
+                        <a href="it/glpi.html" class="block px-4 py-2 text-gray-800 hover:bg-custom-orange">Inventario (GLPI)</a>
+                    </div>
+                </div>
+                <div class="relative dropdown">
+                    <button class="w-full text-left py-2 text-gray-600 hover:text-custom-orange">Para Ventas</button>
+                    <div class="dropdown-menu bg-white rounded-md shadow-lg mt-2 py-2 w-full">
+                        <a href="sales/ai-bots.html" class="block px-4 py-2 text-gray-800 hover:bg-custom-orange">Bots con IA</a>
+                        <a href="sales/crm.html" class="block px-4 py-2 text-gray-800 hover:bg-custom-orange">CRM</a>
+                    </div>
+                </div>
+                 <div class="relative dropdown">
+                    <button class="w-full text-left py-2 text-gray-600 hover:text-custom-orange">Para Servicio al Cliente</button>
+                    <div class="dropdown-menu bg-white rounded-md shadow-lg mt-2 py-2 w-full">
+                        <a href="customer-service/ai-bots.html" class="block px-4 py-2 text-gray-800 hover:bg-custom-orange">Bots con IA</a>
+                        <a href="customer-service/ticketing.html" class="block px-4 py-2 text-gray-800 hover:bg-custom-orange">Plataformas de Tickets</a>
+                    </div>
+                </div>
+                <div class="relative dropdown">
+                    <button class="w-full text-left py-2 text-gray-600 hover:text-custom-orange">Para Marketing</button>
+                    <div class="dropdown-menu bg-white rounded-md shadow-lg mt-2 py-2 w-full">
+                        <a href="marketing/contact-center.html" class="block px-4 py-2 text-gray-800 hover:bg-custom-orange">Contact Center</a>
+                        <a href="marketing/voice-bots.html" class="block px-4 py-2 text-gray-800 hover:bg-custom-orange">Bots de Voz</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-custom-orange">
+        <div class="container mx-auto px-6 py-20 text-center">
+            <h1 class="text-4xl font-bold text-gray-800 mb-2">Innovación y Tecnología para tu Empresa</h1>
+            <p class="text-gray-600 text-lg">Soluciones a la medida para optimizar tus procesos de TI, ventas, servicio al cliente y marketing.</p>
+            <button class="mt-8 bg-orange-500 text-white font-bold py-3 px-6 rounded-full hover:bg-orange-600">Descubre Nuestras Soluciones</button>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">¿Por qué Sempitecno?</h2>
+            <div class="flex flex-wrap">
+                <div class="w-full md:w-1/3 px-4 mb-8">
+                    <div class="rounded-lg shadow-lg p-6 bg-white">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Experiencia Comprobada</h3>
+                        <p class="text-gray-600">Contamos con un equipo de expertos listos para enfrentar cualquier desafío tecnológico.</p>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/3 px-4 mb-8">
+                    <div class="rounded-lg shadow-lg p-6 bg-white">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Soluciones Integrales</h3>
+                        <p class="text-gray-600">Desde monitoreo de infraestructura hasta bots con IA, cubrimos todas tus necesidades.</p>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/3 px-4 mb-8">
+                    <div class="rounded-lg shadow-lg p-6 bg-white">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Soporte Dedicado</h3>
+                        <p class="text-gray-600">Tu éxito es nuestra prioridad. Ofrecemos soporte continuo para garantizar tu satisfacción.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2024 Sempitecno. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Simple dropdown toggle for mobile
+        const dropdownButtons = mobileMenu.querySelectorAll('.dropdown > button');
+        dropdownButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Close other open menus
+                dropdownButtons.forEach(otherButton => {
+                    if (otherButton !== button) {
+                        otherButton.nextElementSibling.style.display = 'none';
+                    }
+                });
+                // Toggle current menu
+                const dropdownMenu = button.nextElementSibling;
+                dropdownMenu.style.display = dropdownMenu.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
+
+</body>
+</html>
