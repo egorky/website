@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventario con GLPI - Sempitecno</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600;700&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" href="../assets/favicon.ico.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="../assets/apple-touch-icon.svg">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-slate-800">
+
+    <!-- Header -->
+    <header class="bg-white/80 backdrop-blur-sm sticky top-0 left-0 right-0 z-50 shadow-sm">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="../index.html">
+                <img src="../assets/logos/logo-main.svg" alt="Sempitecno Logo" class="h-8">
+            </a>
+            <nav class="hidden md:flex space-x-8 items-center">
+                <a href="../index.html#servicios" class="text-slate-600 hover:text-violet-600 transition duration-300">Servicios</a>
+                <a href="../index.html#contacto" class="text-slate-600 hover:text-violet-600 transition duration-300">Contacto</a>
+                <a href="../index.html#contacto" class="bg-violet-600 hover:bg-violet-700 text-white font-bold py-2 px-5 rounded-lg transition duration-300">Solicitar Demo</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="bg-white">
+            <div class="container mx-auto px-6 py-16 md:py-24">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="text-left">
+                        <span class="text-indigo-600 font-semibold uppercase">Gestión de Activos de TI</span>
+                        <h1 class="text-4xl md:text-6xl font-extrabold text-slate-900 mt-2 mb-6 leading-tight">Implementación y Soporte de GLPI</h1>
+                        <p class="text-lg text-slate-600 mb-8">Obtén una visibilidad completa y un control total sobre tu infraestructura tecnológica. Automatizamos el inventario y la gestión del ciclo de vida de tus activos.</p>
+                        <a href="../index.html#contacto" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-8 rounded-lg text-lg transition duration-300 inline-block shadow-lg hover:shadow-xl">Organizar mi Inventario</a>
+                    </div>
+                    <div class="flex justify-center items-center p-4">
+                        <!-- Custom SVG for GLPI -->
+                        <svg class="w-full max-w-md" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                          <g transform="translate(100 100)">
+                            <path d="M62.1,-43.9C75.2,-23.5,76.9,-0.3,68.4,19.3C60,38.9,41.4,55.1,20.4,63.1C-0.5,71.1,-23.9,71,-41.8,59.9C-59.7,48.8,-72.1,26.7,-73.8,4.5C-75.5,-17.7,-66.6,-39.8,-50.2,-52.1C-33.8,-64.4,-16.9,-66.9,3.1,-66.5C23.1,-66.1,49,-64.3,62.1,-43.9Z" fill="#e0e7ff"></path>
+                            <g>
+                                <rect x="-30" y="-30" width="60" height="40" rx="5" fill="#4f46e5" />
+                                <rect x="-25" y="-25" width="50" height="30" rx="3" fill="white" />
+                                <rect x="-20" y="15" width="40" height="15" rx="5" fill="#4f46e5" />
+                                <circle cx="0" cy="18" r="3" fill="white" />
+                                <path d="M -15 -15 L 15 -15 M -15 -5 L 15 -5 M -15 5 L 15 5" stroke="#a5b4fc" stroke-width="3" />
+                            </g>
+                          </g>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How it works -->
+        <section class="py-20 bg-slate-100">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold text-slate-900">¿Cómo Funciona?</h2>
+                    <p class="text-indigo-600 mt-2 text-lg">Nuestro Proceso de Implementación en 3 Simples Pasos</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-10 text-center">
+                    <div class="bg-white p-8 rounded-xl shadow-lg border-t-4 border-indigo-500">
+                        <div class="flex justify-center items-center mb-4 w-20 h-20 mx-auto bg-indigo-100 rounded-full">
+                           <span class="text-3xl font-bold text-indigo-600">1</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Instalación y Descubrimiento</h3>
+                        <p class="text-slate-600">Instalamos y configuramos GLPI en tu servidor. Desplegamos agentes para descubrir y registrar automáticamente todos tus activos de red.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-xl shadow-lg border-t-4 border-indigo-500">
+                        <div class="flex justify-center items-center mb-4 w-20 h-20 mx-auto bg-indigo-100 rounded-full">
+                            <span class="text-3xl font-bold text-indigo-600">2</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Personalización y Carga</h3>
+                        <p class="text-slate-600">Adaptamos la plataforma a tus necesidades, importamos datos existentes (proveedores, contratos) y configuramos reglas de negocio.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-xl shadow-lg border-t-4 border-indigo-500">
+                        <div class="flex justify-center items-center mb-4 w-20 h-20 mx-auto bg-indigo-100 rounded-full">
+                            <span class="text-3xl font-bold text-indigo-600">3</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Capacitación y Soporte</h3>
+                        <p class="text-slate-600">Capacitamos a tu equipo para que aproveche al máximo la herramienta y ofrecemos soporte continuo para resolver dudas y problemas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold text-slate-900">Características Principales</h2>
+                    <p class="text-indigo-600 mt-2 text-lg">Una plataforma completa para la gestión de activos.</p>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Feature 1 -->
+                    <div class="bg-slate-50 p-6 rounded-lg shadow-md transition-all duration-300 feature-card border-l-4 border-indigo-400">
+                        <h3 class="text-xl font-bold text-slate-800 mb-3">Inventario de Hardware y Software</h3>
+                        <p class="text-slate-600">Centraliza la información de todos tus equipos (PCs, servidores, impresoras) y el software instalado en ellos.</p>
+                    </div>
+                    <!-- Feature 2 -->
+                    <div class="bg-slate-50 p-6 rounded-lg shadow-md transition-all duration-300 feature-card border-l-4 border-indigo-400">
+                        <h3 class="text-xl font-bold text-slate-800 mb-3">Gestión de Licencias de Software</h3>
+                        <p class="text-slate-600">Asegura el cumplimiento y optimiza costos controlando el uso de licencias y recibiendo alertas de vencimiento.</p>
+                    </div>
+                    <!-- Feature 3 -->
+                    <div class="bg-slate-50 p-6 rounded-lg shadow-md transition-all duration-300 feature-card border-l-4 border-indigo-400">
+                        <h3 class="text-xl font-bold text-slate-800 mb-3">Base de Conocimiento</h3>
+                        <p class="text-slate-600">Crea una base de conocimiento interna con artículos, FAQs y tutoriales para resolver problemas comunes rápidamente.</p>
+                    </div>
+                    <!-- Feature 4 -->
+                    <div class="bg-slate-50 p-6 rounded-lg shadow-md transition-all duration-300 feature-card border-l-4 border-indigo-400">
+                        <h3 class="text-xl font-bold text-slate-800 mb-3">Gestión de Contratos y Proveedores</h3>
+                        <p class="text-slate-600">Administra contratos, garantías y SLAs. Centraliza la información de tus proveedores y sus contactos.</p>
+                    </div>
+                    <!-- Feature 5 -->
+                    <div class="bg-slate-50 p-6 rounded-lg shadow-md transition-all duration-300 feature-card border-l-4 border-indigo-400">
+                        <h3 class="text-xl font-bold text-slate-800 mb-3">Reservas de Equipos</h3>
+                        <p class="text-slate-600">Permite a los usuarios reservar activos compartidos como proyectores, salas de reuniones o vehículos de empresa.</p>
+                    </div>
+                    <!-- Feature 6 -->
+                    <div class="bg-slate-50 p-6 rounded-lg shadow-md transition-all duration-300 feature-card border-l-4 border-indigo-400">
+                        <h3 class="text-xl font-bold text-slate-800 mb-3">Reportes y Dashboards</h3>
+                        <p class="text-slate-600">Genera reportes personalizables sobre el estado de tus activos, costos, y más para una toma de decisiones informada.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Use Cases -->
+        <section class="py-20 bg-slate-100">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold text-slate-900">Casos de Uso Comunes</h2>
+                    <p class="text-indigo-600 mt-2 text-lg">Vea cómo GLPI puede transformar la gestión de su departamento de TI.</p>
+                </div>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                        <div class="p-8">
+                            <h3 class="text-2xl font-bold text-slate-800 mb-3">Auditorías de TI</h3>
+                            <p class="text-slate-600">Simplifica las auditorías internas y externas al tener toda la información de tus activos y licencias en un solo lugar, siempre actualizada.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                        <div class="p-8">
+                            <h3 class="text-2xl font-bold text-slate-800 mb-3">Onboarding de Empleados</h3>
+                            <p class="text-slate-600">Agiliza la asignación de equipos (laptops, móviles) a nuevos empleados, llevando un registro claro de qué activo tiene cada persona.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                        <div class="p-8">
+                            <h3 class="text-2xl font-bold text-slate-800 mb-3">Planificación de Presupuesto</h3>
+                            <p class="text-slate-600">Toma decisiones informadas sobre renovaciones de equipos y compras de software basándote en datos reales del ciclo de vida de tus activos.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                        <div class="p-8">
+                            <h3 class="text-2xl font-bold text-slate-800 mb-3">Soporte Técnico Eficiente</h3>
+                            <p class="text-slate-600">Cuando un usuario reporta un problema, el técnico puede ver instantáneamente todo el historial y configuración del equipo afectado.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-slate-200">
+        <div class="container mx-auto px-6 py-8 text-center text-slate-500">
+            <a href="../index.html#servicios" class="text-slate-600 hover:text-violet-600 transition duration-300 mb-4 inline-block">Volver a Servicios</a>
+            <p>&copy; 2024 Sempitecno. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

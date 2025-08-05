@@ -1,0 +1,9 @@
+<svg width="220" height="50" viewBox="0 0 220 50" xmlns="http://www.w3.org/2000/svg">
+  <g>
+    <!-- Abstract Shape -->
+    <circle cx="25" cy="25" r="15" fill="#d1d5db"/>
+    <path d="M 20 15 L 30 25 L 20 35" stroke="#fb923c" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Text -->
+    <text x="55" y="32" font-family="'Exo 2', sans-serif" font-size="26" font-weight="600" fill="#4b5563">Sempitecno</text>
+  </g>
+</svg>
